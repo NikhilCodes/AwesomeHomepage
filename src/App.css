@@ -1,38 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 .App {
-  text-align: center;
+    text-align: center;
+    font-family: Quicksand, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#top-bar {
+    padding: 7px 0;
+    color: #394f66;
+    background-color: #f6f6f6;
+    width: 100%;
+    border-bottom: #bec8d2 solid 1px;
+    position: fixed;
+    z-index: 4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#app-bar {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    border-bottom: #bec8d2 solid 1px;
+    padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-title {
+    float: left;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+#menu-bar {
+    float: right;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #394f66;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-y-shifter {
+    background-color: #e0f3ff;
+}
+
+.landing-page {
+    background-color: #e0f3ff;
+    background-image: url("images/hero.svg");
+    background-repeat: no-repeat;
+    height: 84vh;
+    width: 100%;
+    position: relative;
+    border-bottom: black solid 4px;
+}
+
+.landing-page-text {
+    text-align: left;
+    padding-top: 50px;
+}
+
+.landing-page-text h2 {
+    color: #394f66;
+    font-family: Quicksand, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.landing-page-text p {
+    padding-top: 10px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#airship {
+    background-image: url("images/zeppelin.png");
+    position: absolute;
+    top: 20px;
+    left: -110px;
+}
+
+.get-product-button {
+    height: 60px;
+    background-color: #9640cd;
+    border: none;
+    color: white;
+    font-family: Quicksand, sans-serif;
+    font-weight: 600;
+    padding: 0 20px;
+    transition-duration: 0.3s;
+}
+
+.get-product-button:hover {
+    background-color: #7040e8;
+}
+
+.sub-sections {
+    padding: 100px 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    outline-offset: -1px;
+    outline: #23abc1 solid 1px;
+}
+
+.tool-card {
+    width: 320px;
+    height: 380px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: white;
+    transition-duration: 0.3s;
+    box-shadow: rgba(57, 79, 102, 0.22) 0 1px 15px;
+}
+
+.tool-card:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.stats-cell {
+    padding: 40px;
+    border: white solid 1px;
+}
+
+@media screen and (orientation: landscape) {
+    .hero-y-shifter {
+        height: 120px;
+    }
+
+    .landing-page {
+        background-size: 100%;
+    }
+
+    .stats-cell {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .hero-y-shifter {
+        height: 70px;
+    }
+
+    .landing-page {
+        background-size: 200%;
+    }
+
+    .stats-cell {
+        width: 50%;
+    }
 }
