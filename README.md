@@ -1,3 +1,9 @@
+# AwesomeHomepage - A demo level Homepage
+
+Inspiration from **Hubspot**
+Deployment URL: https://dumbspot.netlify.app
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
