@@ -3,7 +3,7 @@ import LandingPage from "./components/Landing";
 import ArrowDown from '@material-ui/icons/ArrowDropDown'
 import LanguageIcon from '@material-ui/icons/Language';
 import SearchIcon from '@material-ui/icons/Search';
-import {Button, Col, Container, Row} from "reactstrap";
+import {Button, Container} from "reactstrap";
 
 import ToolsPage from "./components/Tools";
 import StatsPage from "./components/Stats";

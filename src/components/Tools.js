@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Container, Row} from "reactstrap";
+import {Container} from "reactstrap";
 
 function Card({title, subtitle}) {
   return <div className="tool-card">
