@@ -11,7 +11,7 @@ export default function LandingPage() {
     }
     pos+=1
     document.getElementById("airship").style.left = `${pos}px`
-  }, 10)
+  }, 100)
 
   return <div>
     <div className="hero-y-shifter"/>
