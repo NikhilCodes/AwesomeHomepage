@@ -49,6 +49,7 @@
     width: 100%;
     position: relative;
     border-bottom: black solid 4px;
+    overflow-x: hidden;
 }
 
 .landing-page-text {
